@@ -1,0 +1,358 @@
+:root{
+    --bg-body: #fff;
+    --fontSize-title: 40px;
+    --fonSize-parrafos: 20px;
+
+}
+body {
+    background-color:  var(--bg-body);
+}
+/*barra de navegacion*/
+nav.bg-bb ul li a {
+    color: #000;
+    padding: 10px 10px 10px 10px;
+    
+
+}
+
+
+nav.bg-bb ul li a:hover{
+    color: #00ccff;
+    padding: 10px 10px 10px 10px;
+    
+
+}
+
+
+div,container.fluid {
+    justify-content: flex-end;
+}
+ /*estilo del texto*/
+h1 ,h2 , h3, h4, h5, h6 {
+    font-family: 'Mate SC', serif; 
+    color: #000;
+    font-weight: bolder;
+}
+
+p , a{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+.raya {
+    color: #000;
+}
+.container {
+    padding: 100px;
+}
+.bb h1 {
+    padding: 200px ;
+    
+}
+.bb h1 span {
+    border-bottom:4px solid #000;
+
+}
+
+
+.tema-color{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    background: transparent;
+    
+  }
+
+  .cont-colores{
+    width: 100px;
+    padding: 30px 0px;
+    background: #ffffff;
+    text-align: center;
+    position: absolute;
+    right: -100px;
+    top: -64px;
+    transition: 1s ease-in-out;
+
+  }
+
+  .cont-colores button{
+    width: 30px;
+    height: 30px;
+    color: transparent;
+    border-radius: 40px;
+    display: block;
+    margin: 10px auto;
+    top: -64px;
+    transition: 1s;
+  }
+
+  .cont-colores button:nth-child(1){
+    background: #fff;
+  }
+
+  .cont-colores button:nth-child(2){
+    background: green;
+  }
+
+  .cont-colores button:nth-child(3){
+    background: #252B48;;
+  }
+
+  .open-panel{
+    background: #f0f8ff;
+    color: rgb(14, 66, 49);
+    padding: 30px 50px;
+    transform:rotate(-90deg);
+    position: relative;
+    right: -60px;
+  }
+
+  .cont-colores.active{
+    right: 0;
+  }
+
+  .open-panel.active{
+    right: 37px;
+    transition: 1s;
+}
+
+
+
+/*hero*/
+#sobremi .cont-foto{
+    position: relative;
+    width: 400px;
+}
+
+#sobremi .cont-foto img {
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+
+
+#sobremi .cont-foto::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    border-radius: 10px ;
+    border: 10px solid #0079FF;
+    
+
+}
+
+#proyecto .cont-foto{
+    position: relative;
+    width: 400px;
+}
+
+#proyecto .cont-foto img {
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+
+
+#proyecto .cont-foto::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    border-radius: 10px ;
+    border: 10px solid #0079FF;
+    
+
+}
+
+
+
+#proyecto div {
+    padding: 15px;
+}
+
+
+
+#servicios .card-servicio {
+    
+    background-color:#fff;
+    margin-top: 20px;
+}
+
+
+#servicios .card-servicio {
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#servicios .card-servicio::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid ;
+    border-image: linear-gradient(to right, #00ccff, #d500f9);
+    border-image-slice: 1;
+    border-radius: 135px;
+    top: -6px;
+    left: -6px;
+    transition: border 0.3s ease-in-out;
+    z-index: -1;
+}
+
+
+#servicios .card-servicio:hover::before {
+    border: 5px solid ;
+    border-image: linear-gradient(to right, #d500f9, #00ccff);
+    border-image-slice: 1;
+}
+
+#servicios .card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#experiencia div .row ul li {
+        list-style: none;
+        display: inline-flex;
+       
+}
+
+#experiencia div .row img{
+  width: 150px;
+  padding: 30px;
+  margin-left: 70px;
+  
+   
+}
+
+
+#experiencia div .row {
+    background-color: '';
+    justify-items: end;
+    align-items: end;
+}
+
+
+
+#contactame div .redes-sociales{
+    justify-content: end;
+
+}
+#contactame div .misit {
+    display: flex;
+    justify-content: space-around;
+
+
+        
+}
+
+
+#contactame {
+        background: linear-gradient( to right, #322bff, #24d3ff);
+        color: white;
+        padding: 40px;
+      
+}
+
+
+#contactame article {
+    background: linear-gradient(to end , #322bff);
+    width: 50%;
+    height: 100%;
+    border: 1px solid linear-gradient(to end , #322bff);;
+    border-radius: 10px;
+    padding-right: 15px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+    
+
+#contactame article form input {
+    width: 70%;
+    height: 50%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1 px solid;
+    border-radius: 10px;
+    background-color:#060035;
+}
+
+#contactame div ul img {
+    width: 25px;
+    height: 25px;
+}
+
+.formy {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .formx input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .formx button[type="submit"] {
+    background-color: #060035;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formx button[type="submit"]:hover {
+    background-color:#060035;
+  }
+
+  
+  
+ 
+
+  @media (max-width: 900px) {
+    /* Estilos específicos para pantallas más pequeñas que 768px */
+    
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #bg-bb {
+        justify-content: space-around;
+    }
+
+    #sobremi {
+        text-align: center;
+    }
+
+    #sobremi div .cont-foto{
+        margin-right: 100px ;
+    }
+
+    div,#sobremi, #experiencia, #sobremi {
+        display: block;
+        justify-content: initial;
+      
+    }
+    #contactame {
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+
